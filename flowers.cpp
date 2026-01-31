@@ -6,8 +6,14 @@ class Solution
 public:
     bool canPlaceFlowers(std::vector<int> &flowerbed, int n)
     {
-        return false;
+        int num_possible_spaces;
     }
+    // search for possible spaces `p`
+    // compare against `n`, if n > p -> return early false
+    // otherwise iterate, compute first insertion
+    // recursion?
+    // create "inner" search, takes vector with pos after 1st insertion and takes n - 1
+    // repeat same condition (n > p -> return early), track bool too
 };
 
 int main()
