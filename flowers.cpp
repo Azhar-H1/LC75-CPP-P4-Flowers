@@ -29,6 +29,7 @@ public:
 
     //not right, need to think of a more wholistic approach rather than hard codes
     //hint (derived) from spec indicates that pairs of two could be something to look into
+    //hint: key pieces could be the number "n" param and the MIN length of the vector is 2
     
 };
 
