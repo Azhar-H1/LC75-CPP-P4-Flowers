@@ -15,10 +15,11 @@ public:
             if(i >= 1) prev = flowerbed[--i];
             if(++i < len) next = flowerbed[++i];
             curr = flowerbed[i];
-            
+
         }
 
     }
+
     // search for possible spaces `p`
     // compare against `n`, if n > p -> return early false
     // otherwise iterate, compute first insertion
