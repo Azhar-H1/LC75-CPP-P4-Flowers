@@ -6,18 +6,18 @@ class Solution
 public:
     bool canPlaceFlowers(std::vector<int> &flowerbed, int n)
     {
-        int num_possible_spaces;
-        int curr, next, two_next;
-        bool result;
+        int num_possible_spaces = 0;
+        int prev, curr, next;
         int len = flowerbed.size();
+        bool result;
 
-        bool c1 = (curr == 1 && next == 0  && two_next == 0);
-        bool c2 = (curr == 0 && next == 0 && two_next == 1);
-
-        if(len < 3) return false;
         for(int i = 0; i < len; i++){
-
+            if(i >= 1) prev = flowerbed[--i];
+            if(++i < len) next = flowerbed[++i];
+            curr = flowerbed[i];
+            
         }
+
     }
     // search for possible spaces `p`
     // compare against `n`, if n > p -> return early false
